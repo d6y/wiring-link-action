@@ -7,12 +7,29 @@
   <body class="lift:content_id=main">
     <div id="main" class="lift:surround?with=default;at=content">
       <h2>Welcome to your project!</h2>
-      <p>
-	<span class="lift:helloWorld.howdy">
-	  Welcome to your Lift app at <span id="time">Time goes here</span>
-	</span>
-      </p>
+      
+      <p>Waiting for two things to complete, and then a link will appear below... much like this one: <span class="lift:HelloWorld.simpleLink"></span>.</p>
+
+      <div>
+        <h2>Thing #1</h2>
+        <span class="lift:LazyLoad">
+          <div class="lift:HelloWorld.thing1"></div>
+        </span>
+      </div>
+
+      <div>
+        <h2>Thing #2</h2>
+        <span class="lift:LazyLoad">
+          <div class="lift:HelloWorld.thing2"></div>
+        </span>
+      </div>
+
+      <div>
+       <span class="lift:HelloWorld.continueButton"></span>
+	   </div>
+      
     </div>
   </body>
 </html>
+
 
